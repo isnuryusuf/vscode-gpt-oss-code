@@ -1,0 +1,23 @@
+{
+  "name": "fastapi-vue-frontend",
+  "version": "1.0.0",
+  "description": "Vue frontend for FastAPI + SQLite application",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "vue": "^3.2.0",
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "~5.0.0",
+    "@vue/compiler-sfc": "^3.2.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

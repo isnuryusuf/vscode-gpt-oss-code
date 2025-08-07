@@ -1,0 +1,22 @@
+# Frontend Dependencies
+
+To run the frontend, you need to have Node.js and npm installed.
+
+Node.js version: >= 14.0.0
+npm version: >= 6.0.0
+
+## Installation
+
+1. Install Node.js from https://nodejs.org/
+2. Navigate to the frontend directory
+3. Run: npm install
+
+## Key Dependencies
+
+- vue: ^3.2.0
+- axios: ^0.21.1
+
+## Development Dependencies
+
+- @vue/cli-service: ~5.0.0
+- @vue/compiler-sfc: ^3.2.0
