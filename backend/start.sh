@@ -4,7 +4,7 @@
 # Check if virtual environment exists, if not create it
 if [ ! -d "venv" ]; then
     echo "Creating virtual environment..."
-    python -m venv venv
+    python3 -m venv venv
     echo "Virtual environment created."
 fi
 

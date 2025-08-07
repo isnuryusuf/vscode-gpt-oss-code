@@ -29,7 +29,7 @@ This is a boilerplate project combining:
 
 ### Backend Setup
 1. Navigate to the backend directory: `cd backend`
-2. Create a virtual environment: `python -m venv venv`
+2. Create a virtual environment: `python3 -m venv venv` (or `python -m venv venv` on Windows)
 3. Activate the virtual environment:
    - On Windows: `venv\Scripts\activate`
    - On macOS/Linux: `source venv/bin/activate`
@@ -83,7 +83,7 @@ The frontend is built with Vue 3 and includes:
 ### Automated Integration Tests
 Run the integration tests to verify the application works correctly:
 1. Ensure the backend is running: `cd backend && python main.py`
-2. In a separate terminal, run the tests: `python test_integration.py`
+2. In a separate terminal, run the tests: `python3 test_integration.py` (or `python test_integration.py` on Windows)
 
 ### Manual Testing
 1. Start the backend: `cd backend && python main.py`
