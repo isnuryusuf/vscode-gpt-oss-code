@@ -90,3 +90,17 @@ Run the integration tests to verify the application works correctly:
 2. Start the frontend: `cd frontend && npm run serve`
 3. Visit http://localhost:8080 in your browser
 4. Try creating, reading, updating, and deleting items
+
+## Deployment
+
+For deploying to a Linux server via SSH, see the detailed instructions in the [deployment](deployment/) directory.
+
+### Quick Deployment Steps:
+1. Copy the application files to your Linux server
+2. Run the installation script: `sudo deployment/scripts/install.sh`
+3. Customize configuration files in `/opt/fastapi-vue-app/config/`
+4. Deploy services: `sudo /opt/fastapi-vue-app/scripts/deploy.sh`
+
+The application will be accessible at:
+- Web interface: http://your-server-ip/
+- API: http://your-server-ip/api/

@@ -1,0 +1,17 @@
+[Unit]
+Description=FastAPI Vue Application Backend
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/opt/fastapi-vue-app/backend
+Environment=PATH=/opt/fastapi-vue-app/backend/venv/bin
+ExecStart=/opt/fastapi-vue-app/backend/venv/bin/gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app --bind 0.0.0.0:8000 --timeout 120
+Restart=always
+RestartSec=10
+StandardOutput=append:/opt/fastapi-vue-app/logs/backend.log
+StandardError=append:/opt/fastapi-vue-app/logs/backend.log
+
+[Install]
+WantedBy=multi-user.target
