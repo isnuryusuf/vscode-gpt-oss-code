@@ -91,6 +91,24 @@ Run the integration tests to verify the application works correctly:
 3. Visit http://localhost:8080 in your browser
 4. Try creating, reading, updating, and deleting items
 
+## Troubleshooting
+
+### Common Installation Errors
+
+1. **httptools/parser/parser.c:212:12: fatal error: longintrepr.h: No such file or directory**
+
+   This error occurs due to compatibility issues with older versions of dependencies. The project has been updated to use newer versions that resolve this issue:
+   
+   - Updated requirements.txt with newer versions of fastapi, uvicorn, and pydantic
+   - Added pip upgrade step in deployment scripts
+   
+   To fix this error:
+   ```
+   # In the backend directory
+   pip install --upgrade pip
+   pip install -r requirements.txt
+   ```
+
 ## Deployment
 
 For deploying to a Linux server via SSH, see the detailed instructions in the [deployment](deployment/) directory.

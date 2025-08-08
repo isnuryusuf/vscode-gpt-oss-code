@@ -46,6 +46,8 @@ tar -czf "/opt/fastapi-vue-app-backup-$(date +%Y%m%d-%H%M%S).tar.gz" -C /opt fas
 log "Updating backend..."
 cd $APP_DIR/backend
 source venv/bin/activate
+# Upgrade pip first to avoid compilation issues
+pip install --upgrade pip
 pip install -r requirements.txt
 deactivate
 

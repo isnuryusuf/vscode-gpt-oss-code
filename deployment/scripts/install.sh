@@ -66,6 +66,8 @@ source venv/bin/activate
 
 # Install backend dependencies
 log "Installing backend dependencies..."
+# Upgrade pip first to avoid compilation issues
+pip install --upgrade pip
 pip install -r requirements.txt
 pip install gunicorn
 

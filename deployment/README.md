@@ -146,6 +146,18 @@ sudo /opt/fastapi-vue-app/scripts/update.sh
    - Verify ports 80 and 8000 are free
    - Check with: `sudo ss -tuln | grep ':80\|:8000'`
 
+5. **httptools/parser/parser.c:212:12: fatal error: longintrepr.h: No such file or directory**
+
+   This error occurs due to compatibility issues with older versions of dependencies. The installation script has been updated to resolve this issue by upgrading pip before installing dependencies.
+   
+   If you encounter this error, try:
+   ```bash
+   # In the backend directory on your server
+   source venv/bin/activate
+   pip install --upgrade pip
+   pip install -r requirements.txt
+   ```
+
 ### Useful Commands
 
 ```bash
