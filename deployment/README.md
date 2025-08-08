@@ -1,6 +1,6 @@
-# Deployment Guide
+# Deployment Guide (Python 3)
 
-This directory contains scripts and configuration files for deploying the FastAPI + Vue application to a Linux server.
+This directory contains scripts and configuration files for deploying the FastAPI + Vue application to a Linux server. The application is built with Python 3.
 
 ## Prerequisites
 

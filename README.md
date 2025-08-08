@@ -1,7 +1,7 @@
-# FastAPI + Vue + SQLite Boilerplate
+# FastAPI + Vue + SQLite Boilerplate (Python 3)
 
 This is a boilerplate project combining:
-- FastAPI backend with SQLite database
+- FastAPI backend with SQLite database (Python 3)
 - Vue.js frontend
 - RESTful API integration
 
